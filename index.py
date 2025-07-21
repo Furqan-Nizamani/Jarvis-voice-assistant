@@ -4,6 +4,7 @@ import webbrowser
 import datetime
 import pyjokes
 import os
+import time
 
 def sptext():
     recognizer = sr.Recognizer()
@@ -110,5 +111,7 @@ if __name__ == '__main__':
           elif 'exit' in data1:
              speachtx('okay sir I am going to stop my self Thank you..')
              break
+          
+          time.sleep(10)
     else:
         print('thanks')
